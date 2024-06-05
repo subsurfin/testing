@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>subsurf-home</title>
+    <!-- favicon  -->
+    <link rel="shortcut icon" href="assets/images/favico.png" type="image/x-icon">
+    <!-- faremwork of css -->
+    <link rel="stylesheet" href="assets/css/bootstrap-lib/bootstrap.min.css">
+    <!-- style sheet of css        -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!-- Responsive sheet of css -->
+    <link rel="stylesheet" href="assets/css/responsive.css">
+    <!-- fonts awsome icon link            -->
+    <link rel="stylesheet" href="assets/font-awesome-lib/icon/font-awesome.min.css">
+    <!-- slick-slider link css -->
+    <link rel="stylesheet" href="assets/css/slick.min.css">
+    <!-- animation of css -->
+    <link rel="stylesheet" href="assets/css/aos.css">
+</head>
+<body>
+    <div class="site-wrapper">
+        <div class="first_nav_hero_about">
+            <!-- ======== 1.1. header section ======== -->
+            <header>
+                <nav class="container navbar navbar-expand-lg ">
+                    <div class="container-fluid">
+                        <!-- site logo -->
+                        <a class="nav-logo p-0" href="coming.html"><ig src="assets/images/Logo.png" alt="logo"></a>
+                                <!-- navigation button  -->
+                        <button class="navbar-toggle" onclick="openNav()" type="button"
+                            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                            aria-expanded="false" aria-label="Toggle navigation">
+                            <i class="fa-solid fa-bars"></i>
+                        </button>
+                        <!-- navigation bar manu  -->
+                        <div class="collapse navbar-collapse " id="navbarSupportedContent">
+                            <ul
+                                class="navbar-nav d-flex justify-content-center align-items-center gap-lg-2 gap-md-2 gap-sm-2 gap-2 mb-2 mb-lg-0">
+                                <li class="nav-item">
+                                    <a class="nav-link active" href="coming.html">Home</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="coming.html">pricings</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="coming.html">About us</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="https://t.me/subsurfin_support" target="_blank">Contact us</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a id="search-bar-bt" class="nav-link" href="#"><i
+                                            class="fa-solid fa-magnifying-glass"></i></a>
+                                </li>
+                                <li class="nav-item header_btn ">
+                                    <a class="nav-link nav-hrf btn-hover1" href="login/login.html">Login</a>
+                                </li>
+                                <li class="nav-item" onclick="open_right_side()">
+                                    <a class="nav-link" href="#"><i class="fa-sharp fa-solid fa-bars"></i></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+                <!--============ navigation left slidebar================-->
+                <aside>
+                    <div id="mySidenav" class="sidenav">
+                        <div class="side-nav-logo d-flex justify-content-between align-items-center ps-4 pe-3">
+                            <figure class="navbar-brand"><a href="coming.html"><img src="assets/images/Logo.png" alt="img"
+                                class="nav-logo"></a></figure>
+                            <div class="closebtn" onclick="closeNav()"><i
+                                    class="fa-solid fa-square-xmark side-bar-close-btn"></i></div>
+                        </div>
+                        <ul>
+                            <li class="nav-item">
+                                <a class="nav-link" aria-current="page" href="coming.html">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="aout.html">About</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="feature.html">Feature</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="pricing.html">Pricing</a>
+                            </li>
+                            <li class="nav-item">
+                                <div class="d-flex align-items-center justify-content-between pt-3" id="slid-btn">
+                                    <button class="a-slid">Pages</button>
+                                    <i class="fa-solid fa-caret-down pe-4"></i>
+                                </div>
+                                <ul id="slid-drop" class="myst">
+                                    <li><a href="contact.html">Contact</a></li>
+                                    <li><a href="team.html">Team</a></li>
+                                    <li><a href="testimonials.html">Testimonials</a></li>
+                                    <li><a href="blogs.html">Blogs</a></li>
+                                    <li><a href="faq.html">FAQ</a></li>
+                                    <li><a href="404.html">404</a></li>
+                                    <li><a href="coming.html">Coming Soon</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </aside>
+                <!--================== navigation drop search bar================-->
+                <div class="search" id="search-bar">
+                    <form class="d-flex nav-search">
+                        <input type="text" name="search" placeholder="Enter your text">
+                        <button class="btn-hover1" type="submit">Search</button>
+                    </form>
+                    <button id="remove-btn">
+                        <i class="fa-solid fa-square-xmark "></i>
+                    </button>
+                </div>
+                <!--=================navigation Right slidebar==================-->
+                <section class="right-sidbar" id="right_side">
+                    <div class="d-flex justify-content-between align-items-center">
+                        <!-- site logo -->
+                        <a class="p-0 " href="coming.html"><ig src="assets/images/Logo.png" alt="logo"></a>
+                        <button class="close_right_sidebar fa-solid fa-xmark" onclick="close_right_sade()"> </button>
+                    </div>
+                    <h2>SUBSURF</h2>
+                    <p class="mt-4 pb-3">Surf in the ocean of <br>premium subscriptions.
+                    </p>
+                    <hr>
+                    <h5 class="mt-4 mb-4">Follow us on:</h5>
+
+                    <span class="d-flex gap-4 mt-4">
+                        <a href="https://t.me/subsurfin" target="_blank" class="p-0"><i class="fa-brands fa-telegram"></i></a>
+                    </span>
+                </section>
+            </header>
+            <!-- ======== End of 1.1. header section ========  -->
+            <!-- ======== 1.2. hero section ======== -->
+            <section class="hero">
+                <div class="container">
+                    <div class="row text-md-start text-sm-center text-center gap-md-0 gap-sm-4 gap-5" >
+                        <div  data-aos="fade-up" class="col-md-6 d-flex align-items-md-start align-items-ms-center align-items-center justify-content-center flex-column" >
+                            <h1>SUBSURF</h1>
+                            <p>Surf in the ocean of premium subscriptions.</p>
+                            <a class="btn-hover1" href="login/login.html">Login</a>
+                        </div>
+                        <div data-aos="fade-down" class="col-md-6 position-relative d-flex flex-column justify-content-center align-items-center mt-md-0 mt-sm-5 mt-4">
+                            <mg src="assets/images/index/hero.png" alt="hero_img1" class="moving">
+
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- ======== End of 1.2. hero section ========  -->
+            <!-- ======== 1.3. about section ========  -->
+            <section class="about">
+                <div class="container">
+                    <div class="row text-md-start text-sm-center text-center">
+                        <div class="col-md-6 d-flex justify-content-between">
+                            <div class="ab_card1"  data-aos="flip-left">
+                                <h3>HOW IT WORKS</h3>
+                                <div
+                                    class="d-flex align-items-center justify-content-lg-start justify-content-md-center justify-content-center">
+                                    <div class="abut-video">
+                                        <br>
+                                        <br><a class="video-play-button" href="#">
+                                        <span class="fa-solid fa-play"></span>
+                                        </a>
+            
+                                    </div>
+                                    <div class="p-f-s w-v">Watch Video</div>
+                                </div>
+                            </div>
+                        </div>
+                      
+                    </div>
+                </div>
+            </section>
+        </div>
+        <!-- ======== End of 1.3. about section ========  -->
+        <!-- ======== 1.4. finance section ========  -->
+        <section class="finance">
+            <div class="container text-center">
+                <h2>UNLOCKING THE PREMIUM SUBSCRIPTIONS USING SUBSURF.IN</h2>
+                <P class="mt-0">Acess the premium subscrptions intanly using subsurf.in</P>
+                <div class="finanes-card row gap-md-0 gap-sm-4 gap-4">
+                    <div class="col-lg-4 col-md-4 d-flex justify-content-center pe-lg-3 pe-md-0 pe-sm-3 pe-3">
+                        <div class="fin-card" data-aos="flip-up">
+                            <figure> <img src="assets/images/icon/doller.png" alt="doller"></figure>
+                            <h4>Easy Payment</h4>
+                            <p class="p-f-s">Pay using<br>
+                                UPI qr code, UPI apps, Cards, <br>Net banking.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-4 d-flex justify-content-center">
+                        <div class="fin-card" data-aos="flip-up">
+                            <figure><img src="assets/images/icon/arow.png" alt="arow"></figure>
+                            <h4>Surf Instantly</h4>
+                            <p class="p-f-s">Surf the premium subscriptions instantly.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-4 d-flex justify-content-center">
+                        <div class="fin-card" data-aos="flip-up">
+                            <figure><img src="assets/images/icon/arow.png" alt="arow"></figure>
+                            <h4>Awesome Services</h4>
+                            <p class="p-f-s">Instant customer support.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- ======== End of 1.4. finance section ========  -->
+        <!-- ======== 1.5. ispsum section ========  -->
+        <div class="ispsum-logo">
+            <div class="container">
+                <hr>
+                <div class="logo_ispsum_slider">
+                    <a href="#">
+                        <figure><img src="assets/images/icon/ipsum-1.png" alt="img"></figure>
+                    </a>
+                    <a href="#">
+                        <figure><img src="assets/images/icon/ipsum-2.png" alt="img"></figure>
+                    </a>
+                    <a href="#">
+                        <figure><img src="assets/images/icon/ispum-3.png" alt="img"></figure>
+                    </a>
+                    <a href="#">
+                        <figure><img src="assets/images/icon/ipsum-4.png" alt="img"></figure>
+                    </a>
+                    <a href="#">
+                        <figure><img src="assets/images/icon/ipsum-1.png" alt="img"></figure>
+                    </a>
+                    <a href="#">
+                        <figure><img src="assets/images/icon/ipsum-2.png" alt="img"></figure>
+                    </a>
+                    <a href="#">
+                        <figure><img src="assets/images/icon/ispum-3.png" alt="img"></figure>
+                    </a>
+                    <a href="#">
+                        <figure><img src="assets/images/icon/ipsum-4.png" alt="img"></figure>
+                    </a>
+                </div>
+                <hr>
+            </div>
+        </div>
+        <!-- ======== End of 1.5. ispsum section ========  -->
+        <!-- ======== 1.13. footer section ========  -->
+        <footer class="position-relative">
+            <div class="container">
+                <form class="d-flex align-items-center justify-content-center" id="footer-sub2">
+                </form>
+                <div class="footer-logo text-center pb-lg-4 pb-md-3 pb-sm-2 pb-4">
+                    <!-- footer logo  -->
+                    <a href="index.html">
+                        <figure><ig src="assets/images/Logo.png" alt="img"></figure>
+                    </a>
+                </div>
+                <ul class="d-flex align-items-center justify-content-center">
+                    <li>
+                        <a href="#">Home</a>
+                    </li>
+                    <li>
+                        <a href="https://t.me/subsurfin_support" target="_blank">Contact us</a>
+                    </li>
+                    <li>
+                        <a href="#">About us</a>
+                    </li>
+                    <li>
+                        <a href="#">Pricings</a>
+                    </li>
+                </ul>
+                <hr>
+                <div class="row footer-nav-icon">
+                    <!-- footer social icon  -->
+                    <div class="col-lg-3 col-md-3 d-flex align-items-center justify-content-md-start justify-content-sm-center justify-content-center">
+                        <div style="margin-right: 30px;"><p>Follow us on</p></div>
+                        <div
+                            class="social-icon d-flex gap-2 justify-content-md-start justify-content-sm-center justify-content-center">
+                            <a href="https://t.me/subsurfin" target="_blank"> <i class="fa-brands fa-telegram"></i></a>
+                        </div>
+                    </div>
+                    <!-- footer terms privacy  -->
+                    <div class="col-lg-6 col-md-6 d-flex justify-content-center align-items-center">
+                        <div class=" d-flex gap-3 p-2">
+                            <a href="#">Terms & Condition</a>
+                            <a href="#">Privacy Policy</a>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+                <div class="Copyright d-flex justify-content-between flex-wrap dir">
+                        <p>Copyright © 2024 Subsurf All Right Reserved.</p>
+                        <p>Powered by Subsurf</p>
+                    </div>
+                </div>
+        </footer>
+        <!-- ======== End of 1.13. footer section ========  -->
+    </div>
+    <!-- end site wrapper -->
+    <!-- button back to top -->
+    <button onclick="scrollToTop()" id="backToTopBtn"><i class="fa-solid fa-arrow-turn-up"></i></button>
+
+    <!-- bootstrap min javascript -->
+    <script src="assets/js/javascript-lib/bootstrap.min.js"></script>
+    <!-- j Query -->
+    <script src="assets/js/jquery.js"></script>
+    <!-- slick slider js -->
+    <script src="assets/js/slick.min.js"></script>
+    <!-- main javascript -->
+    <script src="assets/js/custom.js"></script>
+    <!-- counter javascript file -->
+    <script src="assets/js/waypoints.min.js"></script>
+    <!-- animation from javascript -->
+    <script src="assets/js/aos.js"></script>
+    <script>
+        AOS.init({
+            once: true,
+            duration: 1500,
+        });
+      </script>
+    
+</body>
+
+</html>
